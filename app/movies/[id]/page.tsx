@@ -1,10 +1,9 @@
 import { Suspense } from "react";
 import MovieInfo, { getMovie } from "../../../components/movie-info";
 import MovieVidoes from "../../../components/movie-vidoes";
-import { title } from "process";
 
 
-export async function genrateMatadata({
+async function genrateMatadata({
   params: { id },
 }: {
   params: { id: string };
